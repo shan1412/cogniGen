@@ -1,0 +1,435 @@
+======================================================================================================================================================================================================================================================================================================
+Prompt:
+======================================================================================================================================================================================================================================================================================================
+
+Analyze the file, divided the analyzed content into semantic chunks with each chunk having context of it's hierarchy. The goal is to have chunks which can be independently understood.
+ If there are any images, figures ,mark down tables, charts then provide the information that the image represents or table row by row  or images, convert them into meaningful sentences describing them in detail.
+Make sure each chunk of the output list should not exceed 4000 tokens. If it exceeds it, then recursively break it into smaller chunks. Provide the output in the form of a python list. The output should only be a list. Do not provide any conclusive statements apart from the output list.
+Example of expected output:
+[
+{metadata:{"title": "Case Study: Tackling Bird Menace in MRO, RGIA (GATL)",
+        "author": "Kalyan Reddy Gudimetla",
+        "date": "July 2019",
+        "filename":"April 2020- Brief about gold loans.pdf"},
+{"section": "Executive Summary",
+ "subsection": jhbjhb,
+ "content": "GMR Aero Technic Ltd. (GATL) provides MRO services at Hyderabad airport. Bird droppings in hangars cause equipment damage, safety hazards, and maintenance issues. The MRO team developed various methods to address this problem.",
+ "pageno":1
+    },
+    ......
+]
+======================================================================================================================================================================================================================================================================================================
+Response:.
+======================================================================================================================================================================================================================================================================================================
+
+Here is the analyzed content divided into semantic chunks in the requested format:
+
+[
+{
+"metadata": {
+    "title": "MANAPPURAM FINANCE LTD.",
+    "subtitle": "A brief about the company and its mainstay business of gold loans",
+    "date": "April 04, 2020",
+    "filename": "April 2020- Brief about gold loans.pdf"
+},
+"section": "Abstract",
+"content": "Accounting for about 65 percent of its consolidated business, gold loans have the dominant share in the company's business mix. Today, among India's non-banks, it is the second-largest player in gold loans, a business with a proven record of resilience to economic downturns.",
+"pageno": 1
+},
+
+{
+"section": "Company Profile",
+"content": "Manappuram Finance Ltd. is one of India's leading NBFCs focused mainly on gold loans. Promoted by Mr. V.P. Nandakumar (current MD & CEO), its origins go back to 1949 when it was founded in the coastal village of Valapad (Thrissur, Kerala) by his late father Mr V.C. Padmanabhan. The firm was involved in pawnbroking, and money lending carried out on a modest scale. Mr. Nandakumar took over the reins in 1986 after his father expired. Since then, it has been a story of unparalleled growth with many milestones crossed. Incorporated in 1992, Manappuram Finance Ltd. has grown at a rapid pace. Today, the company has a pan-India presence with 4,623 branches across 28 states and UTs and with Assets under Management (AUM) of ₹240,999.5 million. The company's net worth stood at ₹54, 132.7 million as of December 31, 2020.",
+"pageno": 2
+},
+
+{
+"section": "Company Profile",
+"subsection": "Notable achievements",
+"content": "Soon after commencing operations, the company gathered several 'firsts' to its credit. The first non-banking financial company (NBFC) in Kerala to receive a Certificate of Registration issued by the RBI, it was also among the earliest to go for an IPO in 1995. In 2007, it became first Kerala based NBFC to receive investment from foreign institutional investors (FIIs) when the celebrated P.E. fund, Sequoia Capital, invested Rs.700 million along with Hudson Equity Holdings. Received sizable foreign investment of Rs.12,450 million during two QIPs in 2010. The second QIP in November 2010, which raised Rs. 10,000 million remains the single largest foreign investment in U.S. dollar terms received by any company in Kerala to this date. Manappuram Finance Ltd. became the first NBFC in Kerala to undergo credit rating in 1995 and later obtain the highest short-term credit rating of A1+ from ICRA.",
+"pageno": 2
+},
+
+{
+"section": "Company Profile", 
+"subsection": "Wealth creator",
+"content": "Manappuram Finance Ltd. and Mr V.P. Nandakumar, its M.D. & CEO, are widely hailed in India's stock market circles as one the leading wealth creators for investors. In January 2017, MoneyLife magazine compiled a list of the top 20 wealth creators in the stock market over the preceding decade, and Manappuram Finance was ranked thirteenth, having delivered compounded annual shareholder returns of 48 per cent during the decade. In December 2019, Fortune India listed the company among the top wealth creators over the last five years while the Economic Times ET500 Companies list named Manappuram Finance Limited and its MD & CEO, Mr. V.P. Nandakumar, as the leading wealth creator in India for 2019 among companies with a market capitalisation of over Rs.50,000 million.",
+"pageno": 2
+},
+
+{
+"section": "Company Profile",
+"subsection": "Recent diversification",
+"content": "In recent years, the company has diversified into promising new areas like microfinance, home and vehicle finance, SME lending, insurance broking etc. The entry into microfinance followed the acquisition in 2015, and subsequent turnaround, of the Chennai based Asirvad Microfinance Private Limited. From an AUM of less than Rs.3,000 million, Asirvad's portfolio has grown manifold to over Rs.50,000 million in the five years after the acquisition. Today, Manappuram's new businesses contribute nearly 35 per cent to the total business.",
+"pageno": 2-3
+},
+
+{
+"section": "Company Profile",
+"subsection": "Ownership",
+"content": "Manappuram Finance Ltd. is a professionally run company promoted by Mr. V.P. Nandakumar whose family has been involved in gold loans since 1949. The promoters hold approximately 35 percent of the total equity of the company. A similar share is held by various Indian and foreign private equity funds while the balance is dispersed among the public. The shares of the company are traded on both the BSE and NSE. The company is managed by a Board of Directors headed by Mr. Jagdish Capoor, Chairman. Mr. Capoor is a former Deputy Governor of the RBI. Mr. V.P. Nandakumar is the MD & CEO of the company.",
+"pageno": 3
+},
+
+{
+"section": "Gold Loans, The Mainstay",
+"content": "Accounting for 65 percent of total business, gold loans have the dominant share in the company's business mix. Today, Manappuram Finance is the second-largest player in gold loans among India's non-banks. In fact, for many years after its inception in 1992, the company was focussed almost exclusively on gold loans as serious diversification began only in 2014. Historically, Manappuram's roots in gold loans back to the earliest days of its founder V.C. Padmanabhan, who started with money lending and pawnbroking. Over the years, as the inheritor of that legacy, Manappuram Finance Ltd. has built on that deep familiarity with the nitty-gritty of this tradition-bound trade and succeeded in scaling up the business to an extent once considered unimaginable.",
+"pageno": 3
+},
+
+{
+"section": "Historical Context",
+"content": "When speaking of gold, India is often mentioned as holding the worlds' largest stock of privately held gold with estimates ranging from 20 to 25,000 tonnes. Along with China, India is the largest consumer of gold and accounted for 23 percent of global demand between 2009-2018. Further, its physical stock Is supplemented every year by the largest import of gold, averaging about 700 to 800 tonnes per annum. Historically, Indians have for ages had a particular affinity for gold. Gold jewellery takes pride of place in social and cultural occasions, and there is an emotional attachment to family gold jewellery, which often gets passed on from one generation to another. Not surprisingly, rural India holds the bulk of India's gold estimated at 60 to 65 percent of the total gold and 2/3rds of aggregate demand for gold comes from rural areas. What is more, gold in the Indian household usually belongs to the women (referred to as 'Stridhana') and thus a source of empowerment for them. Lacking access to formal financial institutions (the banking network has limited reach in rural areas), gold is the preferred outlet for parking household savings in times of surplus. In times of need, gold is pledged to draw money. This is the origin of the age-old business of pawnbroking or lending against used household gold jewellery.",
+"pageno": 3-4
+},
+
+{
+"section": "Historical Context",
+"subsection": "Gold loan customer segments",
+"content": "The image shows a pyramid representing different household income segments and their credit consumption patterns. The pyramid is divided into four categories: High, Upper mid, Lower mid, and Low income. Each segment is described with the number of households, percentage of total households, types of credit products consumed, and primary financial providers. 
+
+High income segment: 8 million households (3%), consumes housing loans, CD loans, auto loans, educational loans, and personal loans. Primary providers are banks and NBFCs.
+
+Upper mid segment: 61 million households (21%), consumes the same types of loans as the high income segment plus gold loans. Primary providers are also banks and NBFCs.
+
+Lower mid segment: 97 million households (33%), consumes the same types of loans as the upper mid segment. Primary providers are co-operative banks and NBFCs.
+
+Low income segment: 127 million households (43%), primarily consumes MFI/SHG loans and gold loans. Primary providers are co-operative banks, MFIs, SHGs, and gold finance companies.
+
+The total number of households represented is 293 million.",
+"pageno": 4
+},
+
+{
+"section": "Historical Context",
+"content": "In India, the business of lending against gold jewellery has existed for ages. Initially the preserve of the ubiquitous small-time pawnbrokers and moneylenders, the last two decades have seen larger organised players make significant inroads. Why did the gold loans business evolve so well in India but no much in other countries? The answer has to do with idea of 'bullion plus.' Strictly speaking, lending against used household jewellery takes into account the value of the bullion content of the jewellery. However, the emotional connect that borrowers have with the jewellery works as an additional cushion for the lender, making the business of lending against gold jewellery different from, and more secure, than any ordinary kind of commodity lending. Besides, the lender also has the cushion of the making cost of the jewellery which is not financed. This explains why India is an especially fertile ground for gold loans with few parallels elsewhere.",
+"pageno": 4-5
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Demand drivers of gold loans",
+"content": "The image shows an arrow-shaped graphic listing five key demand drivers for gold loans:
+1. Banking products not easily accessible to rural/lower income group
+2. Rising consumerism in rural areas
+3. Changing attitudes towards gold loans
+4. Increasing penetration in non-south geographies
+5. Availability of gold loans on flexible terms
+
+These factors are presented as a progression, suggesting they collectively contribute to the increasing demand for gold loans.",
+"pageno": 5
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Low penetration",
+"content": "Notwithstanding the rapid growth achieved by the organised players in gold loans (particularly the gold loan focussed non-banks), the market penetration is still quite low. Most private gold remains locked up in safes and vaults. Only a fraction of the gold has been monetised. Total gold loans outstanding in the organised sector in 2019 is estimated at just 5.5 percent of the household gold holdings in India, hinting at the potential of a large and mostly untapped market. With the increasing ease in monetising gold and growing economic activity in rural India, demand for gold loan will inevitably increase.",
+"pageno": 5
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Gold Loan portfolio trend",
+"content": "The image shows a stacked bar chart indicating the 'Gold Loan portfolio mix of Top-2 Gold Loan NBFCs' over three years: 2017, 2018, and 2019. The chart breaks down the portfolio by loan duration:
+
+1-3 months loans:
+2017: 58.4%
+2018: 57.5%
+2019: 57.6%
+
+3-6 months loans:
+2017: 18.6%
+2018: 18.5%
+2019: 19.4%
+
+6-12 months loans:
+2017: 20.2%
+2018: 19.5%
+2019: 17.9%
+
+1-3 years loans:
+2017: 2.7%
+2018: 3.9%
+2019: 4.9%
+
+3-5 years loans:
+2017: 0.1%
+2018: 0.5%
+2019: 0.3%
+
+The data shows that short-term loans (1-3 months) consistently make up the majority of the portfolio, while longer-term loans (3-5 years) represent a very small portion.",
+"pageno": 6
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Unorganised players dominate",
+"content": "The Gold loan sector continues to be dominated by unorganised players who still command an estimated 65 percent market share. This is partly due to the fact that organised players were relatively late entrants and they could make an impact only in the last two decades with the rise of gold-loan focussed non-banks. Also, with the bulk of gold being held in rural areas, beyond the reach of the banking network, moneylenders and pawnbrokers operating in lanes and by-lanes could remain in business and flourish. However, with developments in recent years such as Demonetisation (2016) and the nation-wide rollout of GST (2017) hastening the pace of formalisation of India's economy, organised sector gold loan players have a better opportunity to grow business by taking market share away from unorganised players.",
+"pageno": 6-7
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Gold loan market (% share)",
+"content": "The image shows a donut chart representing the market share of organized and unorganized lenders in the gold loan market. The larger segment, colored purple, represents 65% of the market share held by unorganized lenders. The smaller segment, colored blue, represents 35% of the market share held by organized lenders.",
+"pageno": 7
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Organized gold loan sector structure",
+"content": "The image presents a flowchart of the organized gold loan sector and its regulatory bodies:
+
+1. Regulated by RBI (Reserve Bank of India):
+   - Banks (Private/Public)
+   - Small Finance Banks
+   - Co-operative banks
+
+2. Regulated by Ministry of Corporate Affairs:
+   - NBFCs (Non-Banking Financial Companies)
+   - Nidhi Companies
+
+This structure shows the different types of financial institutions involved in the organized gold loan sector and the regulatory bodies overseeing them.",
+"pageno": 7
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "International gold price on the rise",
+"content": "After the sharp correction in the gold price in 2013, prices remained depressed for a couple of years. However, from 2016 onwards (especially after the Brexit vote and the U.S. election) gold prices have steadily gained. While the general impression attributes it to the unsettled global order following the ascension of Donald Trump as U.S. President (after all, gold is traditionally a safe haven asset), we believe there is a more fundamental force at work. This has to do with the continuing inability of the U.S. Fed and other central banks of the advanced economies to come out of the unprecedented easy money policies introduced in 2008-09 to counter the global financial crisis which keeps the opportunity cost (of holding gold) low. As of now, there seems to be no end in sight to central banks pushing for low-interest rates and that will surely support gold prices.",
+"pageno": 7-8
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "International gold price on the rise",
+"content": "Is the gold loan business dependent on increasing the gold price to grow its loan book? Undeniably, a scenario of rising prices does give a temporary boost to the business mainly because people can borrow more against their existing jewellery. However, very soon, this becomes the new normal, and it becomes business as usual. Our experience is that growth in gold loans is a function of the demand for credit, especially among the weaker sections with limited access to formal credit.",
+"pageno": 8
+},
+
+{
+"section": "Some Relevant Macro Trends & Characteristics",
+"subsection": "Resilient to economic downturns",
+"content": "Better placed to ride out global financial storms: A significant part of the demand for gold loans is derived from and dependent upon economic activity levels in rural areas, especially from agriculture and micro-enterprises. A slowdown in economic activity will certainly affect demand for gold loans on this account. However, our experience is that in periods of acute economic slowdown or crisis, the wider financial services sector (banks and non-banks) is also put to stress such that their lending activity slows down drastically. The appetite for risk and disbursing new loans falls. At this point, gold loans become the natural fall-back for borrowers denied access to their regular channels, and this new demand more than compensates for the loss of demand from traditional sources.",
+"pageno": 8
+},
+{
+"section": "Abstract",
+"content": "Accounting for about 65 percent of its consolidated business, gold loans have the dominant share in the company's business mix. Today, among India's non-banks, it is the second-largest player in gold loans, a business with a proven record of resilience to economic downturns.",
+"pageno": 1
+},
+{
+"section": "Figure",
+"content": "The image appears to be an abstract design composed of geometric shapes. The background is a shade of blue with varying tones divided by lighter blue bands suggesting a layered or textured depth. These blue areas are intersected by a large, diagonal white shape that dominates the lower right portion of the image. The precise nature of the image is not clear—it could be a simple decorative design or part of a larger graphic. The image does not provide any clear context to establish a definitive interpretation.",
+"pageno": 1
+},
+
+{
+"section": "Table of Contents",
+"content": "The table of contents includes the following sections and page numbers:
+COMPANY PROFILE: 2
+Notable achievements: 2
+Wealth creator: 2
+Recent diversification: 2
+Ownership: 3
+GOLD LOANS, THE MAINSTAY: 3
+HISTORICAL CONTEXT: 3
+SOME RELEVANT MACRO TRENDS & CHARACTERISTICS: 5
+Demand drivers of gold loans: 5
+Low penetration: 5
+Unorganised players dominate: 6
+International gold price on the rise: 7
+Resilient to economic downturns: 8
+COMPETITIVE ADVANTAGE IN GOLD LOAN: 9
+Advantage NBFCs: 9
+The competitive position of Gold Loan NBFCs vs. Banks: 10
+Advantage Manappuram: 11
+Short-term gold loans: 11
+Online Gold Loan (OGL): 11
+Long term funds raised.: 12
+Proven resilience to financial sector crises: 13
+KEY RISKS TO GOLD FINANCING: 14
+GOLD LOANS, RECENT EVOLUTION: 15",
+"pageno": 1
+},
+
+{
+"section": "International gold price on the rise",
+"content": "After the sharp correction in the gold price in 2013, prices remained depressed for a couple of years. However, from 2016 onwards (especially after the Brexit vote and the U.S. election) gold prices have steadily gained. While the general impression attributes it to the unsettled global order following the ascension of Donald Trump as U.S. President (after all, gold is traditionally a safe haven asset), we believe there is a more fundamental force at work. This has to do with the continuing inability of the U.S. Fed and other central banks of the advanced economies to come out of the unprecedented easy money policies introduced in 2008-09 to counter the global financial crisis which keeps the opportunity cost (of holding gold) low. As of now, there seems to be no end in sight to central banks pushing for low-interest rates and that will surely support gold prices.
+
+Is the gold loan business dependent on increasing the gold price to grow its loan book? Undeniably, a scenario of rising prices does give a temporary boost to the business mainly because people can borrow more against their existing jewellery. However, very soon, this becomes the new normal, and it becomes business as usual. Our experience is that growth in gold loans is a function of the demand for credit, especially among the weaker sections with limited access to formal credit.",
+"pageno": 7
+},
+
+{
+"section": "Resilient to economic downturns",
+"subsection": "Better placed to ride out global financial storms",
+"content": "A significant part of the demand for gold loans is derived from and dependent upon economic activity levels in rural areas, especially from agriculture and micro-enterprises. A slowdown in economic activity will certainly affect demand for gold loans on this account. However, our experience is that in periods of acute economic slowdown or crisis, the wider financial services sector (banks and non-banks) is also put to stress such that their lending activity slows down drastically. The appetite for risk and disbursing new loans falls. At this point, gold loans become the natural fall-back for borrowers denied access to their regular channels, and this new demand more than compensates for the loss of demand from traditional sources.
+
+Further, the tendency among governments and central banks to respond to such crises by easy money policies and fiscal stimulus drives gold prices higher. In India, where the gold prices depend on the international price as well as the USD/ INR exchange rate, the rupee is generally seen to depreciate during crisis periods when a risk-off phase leads to withdrawal of foreign portfolio investments. Given this natural impetus towards higher gold prices, it becomes an additional boost for the gold loans business.
+
+And that was how, during the Global Financial Crisis of 2008-09, Manappuram Finance Ltd. (at the time, the only listed gold loan company in India) was able to record uninterrupted growth and profitability during this period. Sequoia Capital, one of the first PE investors in the company (in 2007, just before the meltdown), was able to exit in 2010 having grown their investment five-fold.",
+"pageno": 8
+},
+
+{
+"section": "Resilient to economic downturns",
+"subsection": "Unscathed by India's NBFC crisis",
+"content": "In late 2018, India's NBFC sector was thrown into crisis when one of the largest NBFCs with the highest credit rating involved in infrastructure finance (IL&FS) went into default. With banks becoming wary of lending further to NBFCs, liquidity dried up, and it was soon revealed that many prominent NBFCs were facing acute ALM mismatches. The outlook for NBFCs had suddenly darkened and share prices of NBFCs across the sector suffered severe erosion. However, it was not long before the market woke up to the fact that NBFCs focussed on gold loans dealt predominantly in short term loans and therefore comfortably placed in respect of ALM. Once this realisation came about, the shares of these companies recovered and outperformed the market.",
+"pageno": 8
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Advantage NBFCs",
+"content": "As mentioned above, with the faster pace of formalisation of the economy now, the organised gold loan players can expect to gain market share from the unorganised players. However, compared to the banks, the focussed non-banks are better placed here because their low-cost model makes it easier to open new branches in rural and semi-urban areas. Since banks have much higher operating cost, they would hesitate to venture in these parts given the limited potential for other business.
+
+Another key demand driver of gold loan is that as income levels go up, the value that people attribute to their time goes up, and this increases the demand for gold loans (which can be availed instantaneously with minimum hassles) for meeting short term, small ticket needs. Put another way, the opportunity cost of alternative sources of finance (involving multiple visits to branches, considerable effort and time in compiling required documentation, etc.) increases.",
+"pageno": 9
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Comparison table of Gold loan NBFCs, Banks, and Moneylenders",
+"content": "Parameters | Gold loan NBFCs | Banks | Moneylenders
+--- | --- | --- | ---
+LTV | Up to 75 per cent | Up to 75 per cent | >75 per cent
+Processing fee | Nil or minimal processing fee; No appraisal fee | · No processing fee and nil/minimal the appraisal fee is charged for small- ticket loans; · Both processing and appraisal fees are charged for high-ticket loans | Nil
+Interest rate | 11-24 per cent p.a. | 7 per cent-15 per cent p.a .; 4% p.a. for agriculture loans | 25-50 per cent p.a.
+Max loan amount | No particular limit | INR3 lakh for agriculture loans | No particular limit
+Penetration | High | Low | High
+Mode of disbursal | Cash payment up to INR20,000; above that amount, direct transfer to customer account | Customer must have an account in the bank to avail of gold loan | Cash
+Working hours | Open beyond banking hours | 10 a.m. to 5 p.m. | Open beyond banking hours
+Regulatory body | RBI | RBI | Not regulated
+Turnaround time | 5 to 10 minutes | 1 hour | >10 minutes
+Repayment plans | Predominantly, a monthly interest payment with the principal payment towards the end of the tenure or EMI-based schemes | Predominantly, interest and principal paid in lump sum towards the end of tenure | Monthly repayment, daily repayment
+Customer service | Core focus | Non-core | Core focus",
+"pageno": 9-10
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "The competitive position of Gold Loan NBFCs vs. Banks",
+"content": "Parameters | Specialised NBFCs | South- based banks | New NBFC entrants | New bank entrants | Cooperative banks
+--- | --- | --- | --- | --- | ---
+Strategic stance and focus | | | | |
+Focus on the segments | High | Medium | Medium | Low to Medium | Medium
+Willingness to expand in non-south regions | High | Low | High | Medium | Low
+Ability to provide accessibility | | | | |
+Size of existing branch network | High | Medium | Medium | Medium | Low
+Flexibility to add branches | High | Low | High | Low | Low
+Ability to provide flexibility | | | | |
+Understanding of target customer segment | High | Medium | Medium | Low | Medium
+Ability to provide a wide range of products -eg. High LTV loans | Medium | Medium | Medium | Medium | Medium
+Competitive advantage on account of flexibility - eg. Long hours, cash disbursals | High | Low | Medium | Low | Low
+Source: IMaCs Industry report 2012 | Regulatory stress points for various categories of lenders | | | |
+| Potential threats to competitive positioning of specialised NBFCs | | | |",
+"pageno": 10
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Advantage Manappuram",
+"content": "Short-term gold loans
+
+Traditionally, gold loans were sanctioned for a tenure of one year, and borrowers were allowed to make bullet payments of interest and principal. This makes it very flexible for the borrower. However, the downside of this became visible in 2013 when a sudden and sharp correction in gold prices led to higher defaults and credit losses. In response, the industry as-a-whole shifted to periodic (monthly) collection of interest to preserve its lending margins. However,
+
+Manappuram Finance decided to break from convention and went further to launch short term gold loan products, mainly of three and six months tenure. Over the years since, the company has succeeded in shifting the bulk of its gold loans to the short-term buckets, which minimises the price risk. The changeover had to be managed carefully, and customers were educated about the advantages of renewing the loan every three months as against the risk of having compounding interest pile up over a year.
+
+The rationale for short-term loan
+
+To arrest volatility from adverse gold price movement as gold loan remains in-the-money
+
+To curb delinquencies and write-offs therefrom
+
+To bring down variations in yield on portfolio
+
+To lower accrued interest
+
+(Rs.) | Earlier | Now | | | |
+--- | --- | --- | --- | --- | ---
+| Single product offering | 3 months | 6 months | 9 months | 12 months
+Gold value | 100 | 100 | 100 | 100 | 100
+LTV (%) | 75 | 75 | 70 | 65 | 60
+Gold loan | 75 | 75 | 70 | 65 | 60
+Interest rate (%) | 24 | 24 | 24 | 24 | 24
+Interest cost | 21 | 7.5 | 11.2 | 14.3 | 16.8
+Total Principal +Interest | 96.0 | 82.5 | 81.2 | 79.3 | 76.8
+Margin of safety (%) | 4.0 | 17.5 | 18.8 | 20.7 | 23.2",
+"pageno": 11
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Online Gold Loan (OGL)",
+"content": "In October 2015, Manappuram Finance became the first to launch an online gold loan (OGL) product that frees borrowers of the need to make repeated visits to the branches while transacting in gold loans. The OGL product is potentially a game-changer because it adds unprecedented convenience to the gold loan process and therefore makes it attractive to borrowers from a higher socio-economic profile who otherwise would not have considered a gold loan. Today, OGL accounts for about 44 per cent of its total gold loan AUM.",
+"pageno": 11
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "OGL helps churn customers at lower Op-Ex",
+"content": "The image shows a streamlined, arrow-like visual with four rounded rectangular shapes connected in a flow, each containing a tagline that refers to different benefits or efficiencies in a financial service:
+
+1. 'Decreases opex to source customer' – suggests a reduction in operational expenditure when acquiring customers.
+2. 'Decreases opex to assay the gold ornaments as it is a one-time activity' – refers to the reduced costs involved in assessing the purity of gold jewelry, which is apparently a one-off task.
+3. 'Decreases transaction cost as loan is disbursed directly to bank account and repayment can occur from anywhere' – indicates a cost-saving measure where loans are directly deposited into accounts, and repayments can be made from any location.
+4. 'Increases customer stickiness as they do not have to visit the branch for disbursal or interest payment' – implies an increase in customer loyalty or retention because of the convenience of no longer needing to physically visit a branch for transactions related to loans.
+
+Overall, the image conveys a sense of process optimization and customer convenience in a financial context, specifically related to online gold loan processing.",
+"pageno": 12
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Long term funds raised",
+"content": "Notwithstanding its comfortable ALM position, the company has proactively sought to increase the share of long-term funds in its funding mix and achieved remarkable success. In March 2019, India's premier lending institution, NABARD, sanctioned a term loan of Rs. 7,700 million meant to be deployed for onward lending to the MSME and microfinance sectors. In June 2019, the International Finance Corporation (IFC), a subsidiary of World Bank, sanctioned a 3-year term loan of US$75 million, the first-ever external commercial borrowing (ECB) availed by the company. This was IFC's very first gold loan focused investment. In January 2020, the company raised US$300 million by way of senior secured fixed rate notes issuance for a three-year tenor. The issue was placed with a coupon of 5.90 per cent and was the first such issuance by the company in the global bond market, tapping investors in Asia and Europe, Middle East and Africa (EMEA). While long term funds come at a higher cost, it imparts stability to the company's funding sources and is therefore considered worthwhile. Besides, gold loans being small ticket and short-term loans, it is easier to pass on an increase in the cost of funds, should this become necessary.",
+"pageno": 12
+},
+
+{
+"section": "COMPETITIVE ADVANTAGE IN GOLD LOAN",
+"subsection": "Manappuram Commercial Paper Yields",
+"content": "The image shows a bubble timeline chart plotting data points over time. The horizontal axis represents time with dates formatted as dd-mm-yyyy, ranging from early 2019 to early 2020. The vertical axis has numerical values that range from 5 to 9.5.
+
+Data points are represented by circles, or 'bubbles,' where the size of each bubble could imply a quantitative value such as frequency, amount, or another dimension of the data. The vertical position of each bubble corresponds to a value on the vertical axis, indicating that the data value varies over time.
+
+There are clusters of bubbles concentrated around certain time intervals, with a noticeable pattern where larger bubbles are clustered within specific periods, perhaps indicating higher activity or another measure during these times. 
+
+Overall, without context, it's unclear what these data points represent, but the chart could be used to visualize trends, patterns, or anomalies in a dataset over a given timeframe.
+
+Source: Data from F-TRAC, FIMMDA, February 2020",
+"pageno": 12
+},
+
+{
+"section": "Proven resilience to financial sector crises",
+"content": "Manappuram Finance has demonstrated resilience during financial crises, including the 2008-2009 global financial crisis and the 2018 NBFC sector crisis in India. During the global financial crisis, the company recorded good growth, as shown in the following table:",
+"pageno": 13
+},
+{
+"section": "Manappuram Finance Ltd. - Performance during the Global Financial Crisis",
+"content": "The table shows the company's performance from FY 2003 to FY 2010:\n\nFiscal Year 2002-03: Gold AUM Rs. 410 Million, 20 Branches, Average gold price Rs. 5,332.36/10gm\nFiscal Year 2004-05: Gold AUM Rs. 810 Million, 42 Branches, 246 Employees, Average gold price Rs. 6,145.38/10gm\nFiscal Year 2006-07: Gold AUM Rs. 3,800 Million, 237 Branches, 613 Employees, Average gold price Rs. 9,240.32/10gm\nFiscal Year 2008-09: Gold AUM Rs. 12,600 Million, 645 Branches, 4686 Employees, Average gold price Rs. 12,889.74/10gm\nFiscal Year 2009-10: Gold AUM Rs. 26,170 Million, 1005 Branches, 7645 Employees, Average gold price Rs. 15,756.09/10gm\n\nThe table demonstrates strong growth in Gold AUM, number of branches, employee count, and average gold prices during this period.",
+"pageno": 13
+},
+{
+"section": "Resilience during 2018 NBFC crisis",
+"content": "During the 2018 NBFC sector crisis in India, Manappuram Finance's focus on short-term loans (typically 3-month tenure for gold loans and about 1 year for microfinance loans) helped it maintain a comfortable asset-liability management (ALM) position. This led to a recovery in the company's share price and outperformance in the market. In December 2019, the Economic Times newspaper named Manappuram Finance Ltd. as the top wealth creator among ET500 companies with a market capitalisation of over Rs.50,000 million.",
+"pageno": 14
+},
+{
+"section": "Key Risks to Gold Financing",
+"content": "The image presents six key risks to gold financing:\n1. Sustained low gold prices could trigger delinquencies.\n2. Auctions reduce the stickiness of customers.\n3. Rising regulation for repayments, disbursal, tenure, storage, auctions.\n4. Risk of theft in branches.\n5. Lack of financial literacy in rural areas.\n6. Millennials' attraction to alternative jewelry.\n\nThese risks are presented in a flow chart format, suggesting they are part of a progression or line of consideration in the industry.",
+"pageno": 14
+},
+{
+"section": "Manappuram's Approach to Risk Mitigation",
+"content": "Manappuram Finance has transitioned to short-term gold loans, which helps minimize downside risks from falling gold prices while maintaining upside potential in rising gold price scenarios. The short-term nature of loans reduces the likelihood of unpaid interest compounding to unmanageable levels and has helped reduce overall auction percentages. The increasing acceptance of Online Gold Loan (OGL) allows customers to conduct transactions without visiting branches, making gold loans more attractive to a higher social demographic of educated and relatively well-off individuals.",
+"pageno": 14
+},
+{
+"section": "Gold Loans, Recent Evolution",
+"content": "The evolution of gold loans is presented in phases from 2008 to 2019:\n\nPhase 1 (2008-12) - High Growth: Rapid growth supported by low cost of funds, rise of India's middle class, and positive economic factors.\n\nPhase 2 (2012) - Regulatory Shock: RBI intervened with specific guidelines, including removal of PSL status and capping LTV at 60%.\n\nPhase 3 (2013) - Gold Loses Shine: Global gold prices reduced drastically, leading to increased NPAs for gold loan companies.\n\nPhase 4A (2014) - Recovery: RBI increased LTV to 75%, creating a level competing field for banks and NBFCs.\n\nPhase 4B - Growth Trajectory: Key players leveraged technology, introduced personalized loan schemes, and decoupled gold price volatility from business profitability.\n\nPhase 5 (2016-17) - Demonetisation: Initial cash crunch led to business shortfall, but companies adapted to digital payment models.\n\nPhase 6 (2018-19) - NBFC Liquidity Stress: Slowdown in disbursals among small players, stable costs for large players and banks, strong demand for gold loans due to liquidity crunch, and emergence of fintech and online gold loan companies.",
+"pageno": 15
+}
+]
